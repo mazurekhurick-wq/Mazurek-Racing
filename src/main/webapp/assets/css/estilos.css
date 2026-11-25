@@ -1,0 +1,449 @@
+@charset "UTF-8";
+
+/* ===== Mazurek Racing - cores lisas (sem degradê) =====
+   Vermelho F1 .... #E10600
+   Preto .......... #15151E
+   Branco ......... #FFFFFF
+   Cinza claro .... #F1F1F1
+================================================== */
+
+:root {
+    --mr-vermelho: #E10600;
+    --mr-vermelho-escuro: #B00500;
+    --mr-preto: #15151E;
+    --mr-cinza-escuro: #38383F;
+    --mr-cinza: #D0D0D2;
+    --mr-claro: #F1F1F1;
+    --mr-branco: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Titillium Web", "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 1.05em;
+    color: var(--mr-preto);
+    background-color: var(--mr-claro);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+    padding-bottom: 40px;
+}
+
+/* ---------- Títulos ---------- */
+h1, h2, h3, h4, .titulo-mr {
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+
+h1 {
+    margin: 32px 0 20px;
+    padding-left: 14px;
+    border-left: 8px solid var(--mr-vermelho);
+}
+
+/* ---------- Menu ---------- */
+.navbar-mr {
+    background-color: var(--mr-preto);
+    border-bottom: 5px solid var(--mr-vermelho);
+    padding: 10px 0;
+}
+
+.navbar-mr .navbar-brand {
+    color: var(--mr-branco);
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: .08em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-mr {
+    background-color: var(--mr-vermelho);
+    color: var(--mr-branco);
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+.navbar-mr .nav-link {
+    color: var(--mr-branco);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: .04em;
+    padding: 8px 14px;
+}
+
+.navbar-mr .nav-link:hover,
+.navbar-mr .nav-link:focus {
+    color: var(--mr-vermelho);
+}
+
+.navbar-mr .navbar-toggler {
+    border-color: var(--mr-branco);
+}
+
+.navbar-mr .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ---------- Destaque (index) ---------- */
+.hero {
+    background-color: var(--mr-preto);
+    color: var(--mr-branco);
+    padding: 70px 0 60px;
+    margin-bottom: 40px;
+    border-bottom: 5px solid var(--mr-vermelho);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0 0 16px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 720px;
+    color: var(--mr-cinza);
+}
+
+.caixa-info {
+    background-color: var(--mr-branco);
+    border-top: 5px solid var(--mr-vermelho);
+    padding: 22px;
+    height: 100%;
+}
+
+.caixa-info h2 {
+    font-size: 1.15rem;
+}
+
+/* ---------- Botões ---------- */
+.btn {
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--mr-vermelho);
+    --bs-btn-border-color: var(--mr-vermelho);
+    --bs-btn-hover-bg: var(--mr-vermelho-escuro);
+    --bs-btn-hover-border-color: var(--mr-vermelho-escuro);
+    --bs-btn-active-bg: var(--mr-vermelho-escuro);
+    --bs-btn-active-border-color: var(--mr-vermelho-escuro);
+    --bs-btn-disabled-bg: var(--mr-vermelho);
+    --bs-btn-disabled-border-color: var(--mr-vermelho);
+    --bs-btn-focus-shadow-rgb: 225, 6, 0;
+}
+
+.btn-secondary {
+    --bs-btn-bg: var(--mr-preto);
+    --bs-btn-border-color: var(--mr-preto);
+    --bs-btn-hover-bg: var(--mr-cinza-escuro);
+    --bs-btn-hover-border-color: var(--mr-cinza-escuro);
+    --bs-btn-active-bg: var(--mr-cinza-escuro);
+    --bs-btn-active-border-color: var(--mr-cinza-escuro);
+}
+
+.btn-danger {
+    --bs-btn-color: var(--mr-vermelho);
+    --bs-btn-bg: var(--mr-branco);
+    --bs-btn-border-color: var(--mr-vermelho);
+    --bs-btn-hover-color: var(--mr-branco);
+    --bs-btn-hover-bg: var(--mr-vermelho);
+    --bs-btn-hover-border-color: var(--mr-vermelho);
+    --bs-btn-active-color: var(--mr-branco);
+    --bs-btn-active-bg: var(--mr-vermelho-escuro);
+    --bs-btn-active-border-color: var(--mr-vermelho-escuro);
+}
+
+.btn-outline-dark {
+    --bs-btn-color: var(--mr-preto);
+    --bs-btn-border-color: var(--mr-preto);
+    --bs-btn-hover-bg: var(--mr-preto);
+    --bs-btn-hover-border-color: var(--mr-preto);
+}
+
+/* ---------- Formulários ---------- */
+.form-control, .form-select {
+    border-radius: 3px;
+    border: 2px solid var(--mr-cinza);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--mr-vermelho);
+    box-shadow: 0 0 0 .2rem rgba(225, 6, 0, .2);
+}
+
+.form-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .04em;
+}
+
+.form-painel {
+    background-color: var(--mr-branco);
+    border-top: 5px solid var(--mr-vermelho);
+    padding: 28px;
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 0;
+}
+
+/* ---------- Alertas ---------- */
+.alert {
+    border-radius: 3px;
+    border-width: 0 0 0 6px;
+}
+
+.alert-success {
+    background-color: var(--mr-branco);
+    border-left-color: var(--mr-preto);
+    color: var(--mr-preto);
+}
+
+.alert-danger {
+    background-color: var(--mr-branco);
+    border-left-color: var(--mr-vermelho);
+    color: var(--mr-vermelho-escuro);
+}
+
+.alert-info {
+    background-color: var(--mr-branco);
+    border-left-color: var(--mr-cinza-escuro);
+    color: var(--mr-preto);
+}
+
+/* ---------- Cartões de piloto (com foto) ---------- */
+.card-piloto {
+    background-color: var(--mr-branco);
+    border: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 6px solid var(--mr-preto);
+}
+
+.card-piloto .foto {
+    background-color: var(--mr-preto);
+    aspect-ratio: 5 / 6;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-piloto .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.card-piloto .numero-selo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--mr-vermelho);
+    color: var(--mr-branco);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.4rem;
+    padding: 2px 14px;
+}
+
+.card-piloto .corpo {
+    padding: 16px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-piloto h2 {
+    font-size: 1.25rem;
+    margin: 0 0 4px;
+}
+
+.card-piloto .equipe-nome {
+    font-weight: 700;
+    color: var(--mr-cinza-escuro);
+    margin-bottom: 4px;
+}
+
+.card-piloto .detalhe {
+    font-size: .85em;
+    color: var(--mr-cinza-escuro);
+}
+
+.selo-equipe {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 6px;
+    border: 1px solid var(--mr-preto);
+}
+
+.estatisticas {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0 16px;
+}
+
+.estatisticas div {
+    flex: 1;
+    background-color: var(--mr-claro);
+    text-align: center;
+    padding: 6px 4px;
+    border-radius: 3px;
+}
+
+.estatisticas strong {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+.estatisticas span {
+    font-size: .7em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--mr-cinza-escuro);
+}
+
+/* ---------- Cartões de equipe (com imagem) ---------- */
+.card-equipe {
+    background-color: var(--mr-branco);
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 10px solid var(--mr-vermelho);
+}
+
+.card-equipe .imagem {
+    background-color: var(--mr-branco);
+    aspect-ratio: 16 / 9;
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--mr-claro);
+}
+
+.card-equipe .imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.card-equipe .corpo {
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-equipe h2 {
+    font-size: 1.3rem;
+}
+
+.card-equipe dl {
+    margin: 10px 0 16px;
+}
+
+.card-equipe dt {
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--mr-cinza-escuro);
+}
+
+.card-equipe dd {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* Botões sempre no rodapé do cartão */
+.acoes {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.acoes form {
+    margin: 0;
+}
+
+/* ---------- Imagem atual no formulário ---------- */
+.previa-imagem {
+    display: block;
+    max-width: 180px;
+    border: 2px solid var(--mr-cinza);
+    background-color: var(--mr-claro);
+    margin-bottom: 10px;
+}
+
+/* ---------- Filtro ---------- */
+.filtro-equipes .btn {
+    margin: 0 6px 8px 0;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+    background-color: var(--mr-preto);
+    color: var(--mr-branco);
+    border-top: 5px solid var(--mr-vermelho);
+    text-align: center;
+    font-size: .75em;
+    padding: 20px 0;
+    line-height: 1.8em;
+    flex-shrink: 0;
+}
+
+/* ---------- Modal ---------- */
+.modal-content {
+    border-radius: 3px;
+    border-top: 5px solid var(--mr-vermelho);
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+}
+
+/* ---------- Links ---------- */
+a {
+    color: var(--mr-vermelho);
+}
+
+a:hover {
+    color: var(--mr-vermelho-escuro);
+}
+
+.btn, .navbar-mr a, .navbar-mr .nav-link {
+    text-decoration: none;
+}

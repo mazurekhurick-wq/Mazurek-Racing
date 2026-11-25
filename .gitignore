@@ -1,0 +1,22 @@
+# Maven / build
+target/
+*.class
+*.war
+
+# Eclipse (os arquivos .project, .classpath e .settings DEVEM ir para o GitHub)
+.metadata/
+bin/
+tmp/
+.apt_generated/
+.factorypath
+RemoteSystemsTempFiles/
+Servers/
+
+# VS Code (settings.json e extensions.json ficam no repositório)
+.vscode/launch.json
+.vscode/.browse*
+.history/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

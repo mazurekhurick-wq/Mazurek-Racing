@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE urlrewrite
+    PUBLIC "-//tuckey.org//DTD UrlRewrite 5.1//EN"
+    "https://tuckey.org/res/dtds/urlrewrite5.1.dtd">
+
+<urlrewrite>
+    <!-- /index abre a página inicial (index.jsp), igual ao projeto do professor -->
+    <rule>
+        <from>^/index$</from>
+        <to>/index.jsp</to>
+    </rule>
+</urlrewrite>

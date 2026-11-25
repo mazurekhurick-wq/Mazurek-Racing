@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" role="img" aria-label="Carro da equipe MR">
+  <rect width="400" height="225" fill="#F1F1F1"/>
+  <rect x="0" y="190" width="400" height="35" fill="#D0D0D2"/>
+  <rect x="0" y="190" width="400" height="4" fill="#15151E"/>
+  <!-- asa traseira -->
+  <rect x="82" y="112" width="8" height="26" fill="#15151E"/>
+  <rect x="38" y="68" width="50" height="44" rx="3" fill="#8A8A92"/>
+  <rect x="38" y="68" width="50" height="8" fill="#15151E"/>
+  <!-- carroceria -->
+  <path d="M64 156 L64 134 L106 124 L142 100 L162 96 L170 112 L216 114 L238 120 L302 138 L356 148 L356 160 L64 160 Z" fill="#8A8A92"/>
+  <path d="M126 140 L252 140 L266 150 L126 150 Z" fill="#FFFFFF"/>
+  <text x="196" y="149" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-style="italic" font-size="11" text-anchor="middle" fill="#15151E">MR</text>
+  <rect x="58" y="158" width="304" height="8" fill="#15151E"/>
+  <!-- piloto e halo -->
+  <circle cx="194" cy="106" r="13" fill="#FFFFFF" stroke="#15151E" stroke-width="2"/>
+  <rect x="198" y="100" width="11" height="8" rx="2" fill="#15151E"/>
+  <path d="M176 114 L188 90 L218 100" fill="none" stroke="#15151E" stroke-width="4" stroke-linejoin="round"/>
+  <!-- asa dianteira -->
+  <rect x="338" y="164" width="56" height="6" fill="#15151E"/>
+  <rect x="376" y="150" width="7" height="22" fill="#8A8A92" stroke="#15151E" stroke-width="2"/>
+  <!-- rodas -->
+  <circle cx="108" cy="160" r="30" fill="#15151E"/>
+  <circle cx="108" cy="160" r="15" fill="#D0D0D2"/>
+  <circle cx="108" cy="160" r="5" fill="#15151E"/>
+  <circle cx="314" cy="164" r="26" fill="#15151E"/>
+  <circle cx="314" cy="164" r="13" fill="#D0D0D2"/>
+  <circle cx="314" cy="164" r="4" fill="#15151E"/>
+</svg>
