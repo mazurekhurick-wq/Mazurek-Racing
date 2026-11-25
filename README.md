@@ -2,8 +2,6 @@ Mazurek Racing 🏁
 
 CRUD de pilotos e equipes de Fórmula 1 para a disciplina de Programação I (IFC Campus Videira). Feito com Java (Servlets + JSP), MariaDB e Tomcat.
 
-Prévia sem instalar nada: abra previa/previa.html no navegador.
-
 Funções
 Pilotos: cadastrar, listar (com filtro por equipe), editar e excluir
 Equipes: cadastrar, listar, editar e excluir
